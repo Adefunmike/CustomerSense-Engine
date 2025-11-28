@@ -16,5 +16,3 @@ CustomerSense Engine is optimized for **Azure deployment** via Container Apps or
 
 The goal is to help organizations improve retention, enhance marketing strategies, personalize engagement, and ultimately increase customer lifetime value by using automated, intelligent, and data-driven decision-making.
 
-
-Just tell me **which one you want next.**
