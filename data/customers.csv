@@ -1,0 +1,6 @@
+customer_id,name,age,location,purchase_history,average_spend,segment
+C001,Esther,28,Lagos,"Electronics, Wearables",75.5,
+C002,James,34,Abuja,"Office, Accessories",40.2,
+C003,Amaka,22,Enugu,Electronics,55.1,
+C004,Tunde,30,Ibadan,"Wearables, Electronics",92.4,
+C005,Grace,27,Port Harcourt,Office,33.75,
