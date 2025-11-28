@@ -1,0 +1,62 @@
+version: 1.0
+
+# =====================================================
+# SAFETY POLICY FOR MARKETING MESSAGES
+# =====================================================
+
+prohibited_content:
+  - name: "Hate Speech"
+    description: "Content attacking or insulting a person or group based on protected attributes."
+    patterns:
+      - "(?i)\b(hate|kill|violence against|inferior|superior)\b"
+
+  - name: "Harassment / Abuse"
+    description: "Content that insults, bullies, or targets an individual or group."
+    patterns:
+      - "(?i)\b(stupid|idiot|useless|worthless)\b"
+
+  - name: "Sexual Content"
+    description: "Explicit or inappropriate sexual material not allowed in marketing messages."
+    patterns:
+      - "(?i)\b(sex|sexual|porn|nude|xxx)\b"
+
+  - name: "Disallowed Medical Claims"
+    description: "Products should not make unverified or harmful health claims."
+    patterns:
+      - "(?i)\b(cures|treats|heals|fixes diseases)\b"
+
+  - name: "Disallowed Financial Claims"
+    description: "False guarantees or unrealistic financial promises."
+    patterns:
+      - "(?i)\b(get rich|guaranteed income|quick money)\b"
+
+brand_guidelines:
+  tone:
+    allowed:
+      - "helpful"
+      - "supportive"
+      - "friendly"
+      - "professional"
+    disallowed:
+      - "aggressive"
+      - "sarcastic"
+      - "fear-based"
+      - "guilt-tripping"
+
+  forbidden_phrases:
+    - "limited time panic"
+    - "you must buy now"
+    - "only idiots miss this"
+    - "act before you regret"
+
+citation_requirements:
+  require_product_citations: true
+  citation_format: "[source: {product_id}]"
+
+logging:
+  enabled: true
+  log_file: "logs/safety_violations.log"
+
+actions:
+  on_violation: "block"
+  on_warning: "flag"
